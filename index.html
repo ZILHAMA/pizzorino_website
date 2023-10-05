@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
     <title >pizzorino_website</title> 
     
 
 </head>
 <body>
     <nav>
-<img src="images/Pizza-icon.png" alt=""style="width:100px;height:100px;">
-<h2>pizzorino</h2> 
+<img src="images/Pizza-icon.png" alt="" id="logo">
+<h2 id="pizzorino">pizzorino</h2> 
 
 
     </nav>
@@ -22,7 +26,7 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore cupiditate fuga adipisci repudiandae dolores expedita omnis ab, corporis consequatur sit corrupti in autem debitis excepturi ex sapiente! Nulla, aperiam.</p>
 
         </div>
-        <div>
+        <div class="section-2">
             <h2>QUALITE</h2>
             <img src="https://pizzeria-hans.com/wp-content/uploads/2019/05/pizzeria-preview.jpg" alt="" style="width:300px;height:300px;">
             <h2>PRIX</h2>
@@ -30,9 +34,9 @@
             <h2>GOUT</h2>
             <img src="https://t1.uc.ltmcdn.com/fr/posts/8/2/8/noms_de_pizzeria_14828_orig.jpg" alt=""style="width:300px;height:300px;">
             <h2>RAPIDITE</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5F64hnHXmpsYa1D7bqRn9KUGOMrPwquTl8A&usqp=CAU" alt=""style="width:300px;height:300px;">
+           
         </div>
-
+<div class="section-3">
         <div>
                <h2>Pizza margueritte</h2>
            
@@ -54,15 +58,36 @@
          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sJCm7NLJMZqRb6tsLnyEvio5qOByyA8Ynusf4Uk-Suu7aVONopTqb_azPqJAT-f5UYI&usqp=CAU" alt=""style="width:200px;height:200px;">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum maxime nemo fugiat eaque earum odio quod at. Ipsa excepturi vero, facilis soluta voluptatum eveniet quisquam eaque, consequatur nam deserunt consequuntur.</p>
         </div>
-        <form action="">Contactez Nous</form>
-        <label for="">Nom</label>
+    </div>
+   <!---- <div class="formulaire"> -->
+        <!---- <form action="">Contactez Nous</form>
+        
+        <label for="">Nom</label></div>
         <input type="text">
         <label for="">Téléphone</label>
         <input type="number">
-        <button>Envoyer</button>
+        <button id="btn">Envoyer</button> -->
+        <div class="form-container">
+            <form>
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+              </div>
+              <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone :</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Votre numéro de téléphone">
+              </div>
+              <button type="submit" class="form-submit-button">Envoyer</button>
+            </form>
+          </div>
+    </div> 
     </main>
-    <footer>
-        <h2>Copyright 2023</h2> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoekKKr0oVR5KHH4wdcY09SCZuS6z181hlxg&usqp=CAU" alt=""style="width:50px;height:50px;">
+    <footer class="footer">
+        <h2>Copyright 2023</h2> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAV1BMVEU6VZ////8sS5uRnsbIz+I2Up74+fxNZagfRJlCW6Lo6vJab6zz9PlVaqlEXqUpSZqIlsHR1ua8w9vc4OyCksCvuNVwgbZgdK+Ypcppe7PByN6gq84AOJRGa4OWAAABjklEQVRoge3ZW4+CMBCGYSwMp4WWk+iq//937l4KDoc0M21ivvea5EkL1FKTBCGEEELoS6LPgtGmdGTbn3VVGNy1XdaPdbOubgPMgKm6vrmw5fq+MWnN40F8N23r+j7RdUdX9ynJdnlln2hv7tV9ov6A1/XNcMSr+uZ+yGv6VGysOYF8t//maftkT/CK/omHT3f+T9x9RZ/mM7yef2769Xw7bpL1W6OST+3G7R+n1r6nov/7t5zl784E2X7SzPpTqQWuMhPHDyYQn5iU82/BtvusXwcbPu/3Lq6fRR4/fPjw4cOXb3Ws5ljf6Z2/Fcss9+2ZVcVHQnxV56sY/7K+Js8zoZ/k6uigY6NrZD8VeiR9/V+hB9DXl/r88fQbG9cfZXRvv5dafzz9h9SK7Ok/I49/iuxLvf6+fhHXb6q4/ii2IfHze7HjED9/iOw/xQ4E/PxJ7P5br/3XLHce5MpFr47hH6/lRaXify/8/lvNO+d/8fcPfPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHf9QfM/Ie8hqSCxYAAAAASUVORK5CYII=" alt="" id="img-footer">
         <h3>05487 87 88 22</h3>
         
     </footer>
